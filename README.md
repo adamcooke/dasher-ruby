@@ -24,6 +24,19 @@ Teledash.client.screen(1)     #=>   Return information about a given screen by I
 # key of the property you want to change and the new value.
 Teledash.client.update_property(2, "number", 4001)
 Teledash.client.update_property("screen1.signups", "number", 4001)
+
+# Updating lists is also easy. You provide the square ID (or path), an optional
+# identifier allowing you to remove/edit this item again in the future and the
+# properties for the list item.
+Teledash.client.add_list_item(2, nil, {"text" => "Some properties", "color" => "red"})
+
+# You can also provide a full new list of updates. Screens will automatically
+# remove, add or edit items as appropriate. Any items without identifiers will
+# be removed.
+Teledash.client.replace_list(2, [
+  {"identifier" => "A", {"text" => "Some example text on row A"}},
+  {"identifier" => "B", {"text" => "Some example text on row B"}}
+])
 ```
 
 The `Teledash.client` instance is automatically configured to use the production

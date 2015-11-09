@@ -26,6 +26,16 @@ module Teledash
       e.result.data["code"] == "ValidationError" ? false : raise
     end
 
+    def add_list_item(square, identifier, properties = {})
+      api.lists.add!(:square => square, :identifier => identifier, :properties => properties)
+    end
+
+    def replace_list(square, items = [])
+      api.lists.replace!(:square => square, :items => items)
+    rescue MoonropeClient::RequestError => e
+      puts e.result.data
+    end
+
     private
 
     def api
