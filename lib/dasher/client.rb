@@ -1,6 +1,6 @@
 require 'moonrope_client'
 
-module Teledash
+module Dasher
   class Client
 
     attr_reader :host, :token, :port, :ssl
