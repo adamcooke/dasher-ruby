@@ -30,6 +30,10 @@ module Dasher
       api.lists.add!(:square => square, :identifier => identifier, :properties => properties)
     end
 
+    def insert_list_item(square, index, identifier, properties = {})
+      api.lists.add!(:square => square, :index => index, :identifier => identifier, :properties => properties)
+    end
+
     def replace_list(square, items = [])
       api.lists.replace!(:square => square, :items => items)
     rescue MoonropeClient::RequestError => e
