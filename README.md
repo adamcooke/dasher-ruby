@@ -1,6 +1,6 @@
 # Dasher Ruby Client
 
-This client allows you to easily update screen data for [Dasher](http://dasherapp.com).
+This client allows you to easily update screen data for [Dasher](http://dasher.tv).
 You can use this gem to easily push new data to any of your Dasher screens with
 ease.
 
