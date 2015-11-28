@@ -40,7 +40,7 @@ Dasher.client.replace_list(2, [
 ```
 
 The `Dasher.client` instance is automatically configured to use the production
-Dasher endpoints and the key in the `Dasher_TOKEN` environment variable.
+Dasher endpoints and the key in the `DASHER_TOKEN` environment variable.
 You can create your own clients if you would like.
 
 ```ruby
