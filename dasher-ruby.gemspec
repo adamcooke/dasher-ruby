@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Dasher::VERSION
   s.authors     = ["Adam Cooke"]
   s.email       = ["adam@atechmedia.com"]
-  s.homepage    = "https://dasher.tv"
+  s.homepage    = "https://dashertv.com"
   s.summary     = "A Ruby client library for the Dasher API."
   s.description = "A full client library allows requests to made to the Dasher API."
   s.files = Dir["{lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
