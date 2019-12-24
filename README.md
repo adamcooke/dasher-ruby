@@ -34,8 +34,8 @@ Dasher.client.add_list_item(2, nil, {"text" => "Some properties", "color" => "re
 # remove, add or edit items as appropriate. Any items without identifiers will
 # be removed.
 Dasher.client.replace_list(2, [
-  {"identifier" => "A", {"text" => "Some example text on row A"}},
-  {"identifier" => "B", {"text" => "Some example text on row B"}}
+  {"identifier" => "A", "properties" => {"text" => "Some example text on row A"}},
+  {"identifier" => "B", "properties" => {"text" => "Some example text on row B"}}
 ])
 ```
 
