@@ -1,21 +1,21 @@
 PATH
   remote: .
   specs:
-    viaduct-api (1.0.0)
-      moonrope-client (~> 1.0.2)
+    dasher-ruby (0.0.1)
+      moonrope-client (>= 1.0.2, < 2.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    json (1.8.3)
-    moonrope-client (1.0.2)
-      json (~> 1.8, >= 1.8.0)
+    json (2.6.3)
+    moonrope-client (1.0.5)
+      json
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  viaduct-api!
+  dasher-ruby!
 
 BUNDLED WITH
    1.10.6
